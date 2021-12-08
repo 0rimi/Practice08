@@ -1,5 +1,7 @@
 package com.javaex.ex07;
 
+import java.util.Objects;
+
 public class Point {
 	
 	private int x;
@@ -10,7 +12,16 @@ public class Point {
 		this.y = y;
 	}
 
-	//equals() 메소드를 작성하세요.
 
+	//equals() 메소드를 작성하세요.
+	@Override
+	public boolean equals(Object obj) {
+		if(this.x==((Point)obj).x) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
 	
 }
