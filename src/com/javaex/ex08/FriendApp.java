@@ -15,6 +15,20 @@ public class FriendApp {
 		Friend[] fArray = new Friend[3];
 		
 		
+		for(int i=0; i<fArray.length; i++) {		
+			String finfo = sc.nextLine();
+			String[] fcon = finfo.split(" ");
+			fArray[i]= new Friend(fcon[0],fcon[1],fcon[2]);
+		}
+			
+		
+		//출력
+		for(int i=0; i<fArray.length; i++) {
+			fArray[i].showinfo();
+		}
+
+		
+		/*
 		//1
 		String friendsinfo1 = sc.nextLine();
 		String finfo[] = friendsinfo1.split(" ");
@@ -32,12 +46,8 @@ public class FriendApp {
 				fArray[2].setName(finfo3[0]);
 				fArray[2].setPh(finfo3[1]);
 				fArray[2].setSchool(finfo3[2]);
-		
+		*/
 
-		//출력
-		for(int i=0; i<fArray.length; i++) {
-			fArray[i].showinfo();
-		}
 		
 		//한번에 쓰고싶었는데 안되네용 '3'
 		/*
