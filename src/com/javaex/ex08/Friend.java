@@ -36,7 +36,11 @@ public class Friend {
 		this.school = school;
 	}
 	
-	
+	public String info() {
+		return "이름 : "+name+"\t"
+				+"핸드폰 : "+ph+"\t"
+				+"학교 : "+school ;
+	}
 	
 	public void showinfo() {
 		System.out.println("이름 : "+name+"\t"
